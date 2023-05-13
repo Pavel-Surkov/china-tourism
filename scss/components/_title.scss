@@ -26,6 +26,12 @@
 				@include font(3.6rem, calc(48 / 36));
 				margin-bottom: 30px;
 			}
+			&-m {
+				@include font(3rem, calc(54 / 40));
+			}
+			&-s {
+				@include font(2rem, calc(41 / 30));
+			}
 		}
 	}
 }
