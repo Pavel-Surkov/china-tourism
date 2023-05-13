@@ -1,0 +1,16 @@
+.tag {
+	border-radius: 6px;
+	background: #e0f4f9b2;
+	padding: 8px 18px;
+	color: $blue-300;
+	@include font(1.8rem, calc(20 / 18));
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+	.tage {
+		font-size: 1.6rem;
+		padding: 6px 14px;
+	}
+}

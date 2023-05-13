@@ -1,2 +1,139 @@
 .hero {
+	position: relative;
+	& .hero-swiper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		&-btns {
+			display: grid;
+			grid-template-columns: 40px 40px;
+			grid-gap: 3px;
+			& div[data-btn='swiper-btn'] {
+				width: 40px;
+				height: 40px;
+				background: rgba($white, 0.3);
+				border-radius: 6px;
+				display: grid;
+				place-items: center;
+				&:hover {
+					background: rgba($white, 0.4);
+				}
+				&:active {
+					background: rgba($white, 0.2);
+				}
+			}
+		}
+		&-img {
+			height: 100%;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: linear-gradient(
+					180deg,
+					rgba(0, 0, 0, 0) 0%,
+					rgba(10, 45, 54, 0.75) 85.62%,
+					rgba(10, 45, 54, 0.76) 100%
+				);
+				z-index: 1;
+				pointer-events: none;
+			}
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	&-container {
+		position: relative;
+	}
+	&-tag {
+		margin-bottom: 18px;
+	}
+	&-wechat {
+		display: flex;
+		margin-bottom: 51px;
+	}
+	&-wrapper {
+		padding: 163px 0 86px;
+		@include flex(column);
+		min-height: 610px;
+		box-sizing: border-box;
+	}
+	&-bottom {
+		margin-top: auto;
+		@include flex(row, flex-end);
+		gap: 20px;
+	}
+	&-advantages {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 3fr 4fr 4fr;
+		align-items: end;
+		& li {
+			@include flex(column);
+			& i {
+				display: inline-block;
+				margin-bottom: 15px;
+			}
+			& p {
+				@include font(2rem, calc(27 / 20));
+				font-weight: 500;
+				color: $white;
+				& b {
+					color: $blue-500;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.hero {
+		&-wrapper {
+			padding: 110px 0 50px;
+		}
+		&-wechat {
+			margin-bottom: 30px;
+		}
+		&-bottom {
+			width: 100%;
+			justify-content: space-between;
+		}
+		&-advantages {
+			grid-template-columns: 100%;
+			& li {
+				max-width: 400px;
+				& i {
+					width: 30px;
+					height: 30px;
+					margin-bottom: 8px;
+				}
+				& p {
+					font-size: 1.4rem;
+				}
+			}
+		}
+		& .hero-swiper {
+			&-btns {
+				grid-template-columns: 30px 30px;
+				& div[data-btn='swiper-btn'] {
+					width: 30px;
+					height: 30px;
+					& svg {
+						max-width: 18px;
+						max-height: 18px;
+					}
+				}
+			}
+		}
+	}
 }

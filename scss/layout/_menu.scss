@@ -1,0 +1,62 @@
+.menu {
+	display: none;
+	&-btn {
+		&__wrapper {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.menu {
+		display: block;
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		z-index: 20;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		transition: 0.3s opacity;
+		pointer-events: none;
+		background: $white;
+		&_opened {
+			opacity: 1;
+			pointer-events: auto;
+		}
+		&-btn {
+			display: grid;
+			place-items: center;
+			&__wrapper {
+				@include flex(row, center, flex-end);
+			}
+		}
+		&-header {
+			&__wrapper {
+				padding: 12px 0;
+				border-bottom: 1px solid rgba($gray-900, 0.4);
+				@include flex(row, center, space-between);
+			}
+		}
+		&-close {
+			&-btn {
+				display: grid;
+				place-items: center;
+			}
+		}
+		&-content {
+			padding-top: 12px;
+		}
+		&-links {
+			& li {
+				border-bottom: 1px solid rgba($gray-900, 0.4);
+			}
+			& .link {
+				width: 100%;
+				color: $black;
+				padding: 10px 0;
+				@include font(2rem, calc(24 / 20));
+			}
+		}
+	}
+}

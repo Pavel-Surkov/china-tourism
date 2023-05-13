@@ -15,32 +15,136 @@
 	<meta property="og:image" content="" />
 	<title>Travel in Russia</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-	<header class="header" style="background: blue">
-		<div class="container">
-			<div class="header-wrapper">
-				<a href="/" class="logo header-logo">
-					<img src="./assets/images/logo.png" srcset="./assets/images/logo.png 1x, ./assets/images/logo@2x.png 2x"
-						alt="logo" />
-				</a>
-				<nav class="header-nav">
-					<a class="link" href="sahalin.html">На Сахалин</a>
-					<a class="link" href="elbrus.html">На Эльбрус</a>
-					<a class="link" href="about.html">О компании</a>
-				</nav>
-				<div class="header-wechat">
-					<a class="btn btn-primary_small" href="https://www.wechat.com/"><span>Написать в вичате</span></a>
+	<header class="header">
+		<div class="header-container">
+			<div class="container">
+				<div class="header-wrapper">
+					<a href="/" class="logo header-logo">
+						<img src="./assets/images/logo.svg" alt="logo" />
+					</a>
+					<nav class="header-nav">
+						<a class="link" href="sahalin.html">На Сахалин</a>
+						<a class="link" href="elbrus.html">На Эльбрус</a>
+						<a class="link" href="about.html">О компании</a>
+					</nav>
+					<div class="header-wechat">
+						<a class="btn btn-primary_small" href="https://www.wechat.com/"><span>Написать в вичате</span></a>
+						<a class="header-wechat_mobile" href="https://www.wechat.com/">
+							<img src="/assets/icons/wechat.svg" alt="wechat" />
+						</a>
+					</div>
+					<div class="menu-btn__wrapper">
+						<button class="menu-btn" id="menu-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+								<path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+								<path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+								<path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="menu" id="menu">
+						<header class="menu-header">
+							<div class="container">
+								<div class="menu-header__wrapper">
+									<a href="/" class="logo header-logo">
+										<img src="./assets/images/logo.svg" alt="logo" />
+									</a>
+									<button class="menu-close-btn" id="menu-close-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 1024 1024">
+											<path fill="#000000"
+												d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</header>
+						<div class="container">
+							<nav class="menu-content">
+								<ul class="menu-links">
+									<li><a class="link" href="sahalin.html">На Сахалин</a></li>
+									<li><a class="link" href="elbrus.html">На Эльбрус</a></li>
+									<li><a class="link" href="about.html">О компании</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main class="home main">
-
+		<section class="hero">
+			<div class="swiper hero-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="hero-swiper-img">
+							<img src="./assets/images/hero-1.jpg"
+								srcset="./assets/images/hero-1.jpg 1x, ./assets/images/hero-1@2x.jpg 2x" alt="hero image" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hero-swiper-img">
+							<img src="./assets/images/hero-2.jpg"
+								srcset="./assets/images/hero-2.jpg 1x, ./assets/images/hero-2@2x.jpg 2x" alt="hero image" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-container">
+				<div class="container">
+					<div class="hero-wrapper">
+						<div class="hero-tag">
+							<div class="tag">
+								TORUSSIA
+							</div>
+						</div>
+						<h1 class="title title_size-l title_white">Туры в Россию. <br />Сахалин. Эльбрус</h1>
+						<div class="hero-wechat">
+							<a class="btn btn-primary" href="https://wechat.com/"><span>Написать в вичате</span></a>
+						</div>
+						<div class="hero-bottom">
+							<ul class="hero-advantages">
+								<li>
+									<i><img src="/assets/icons/feature-icon.svg" alt="feature icon" /></i>
+									<p>Опытные гиды со знанием китайского языка</p>
+								</li>
+								<li>
+									<i><img src="/assets/icons/feature-icon.svg" alt="feature icon" /></i>
+									<p>Собственные отели, туристические базы, альпинистские лагеря.</p>
+								</li>
+								<li>
+									<p><b>Наши приоритеты — комфорт и безопасность</b></p>
+								</li>
+							</ul>
+							<div class="hero-swiper-btns">
+								<div data-btn="swiper-btn" class="hero-btn-prev">
+									<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M13.8645 19.3415L6.14162 11.6415C6.04996 11.5499 5.98487 11.4506 5.94637 11.3436C5.90787 11.2367 5.88893 11.1221 5.88954 10.9999C5.88954 10.8776 5.90848 10.7631 5.94637 10.6561C5.98426 10.5492 6.04935 10.4499 6.14162 10.3582L13.8645 2.63529C14.0784 2.4214 14.3458 2.31445 14.6666 2.31445C14.9875 2.31445 15.2625 2.42904 15.4916 2.6582C15.7208 2.88737 15.8354 3.15473 15.8354 3.46029C15.8354 3.76584 15.7208 4.0332 15.4916 4.26237L8.75412 10.9999L15.4916 17.7374C15.7055 17.9513 15.8125 18.215 15.8125 18.5285C15.8125 18.842 15.6979 19.113 15.4687 19.3415C15.2395 19.5707 14.9722 19.6853 14.6666 19.6853C14.3611 19.6853 14.0937 19.5707 13.8645 19.3415Z"
+											fill="white" fill-opacity="0.7" />
+									</svg>
+								</div>
+								<div data-btn="swiper-btn" class="hero-btn-next">
+									<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.1354 19.3415L15.8583 11.6415C15.95 11.5499 16.0151 11.4506 16.0536 11.3436C16.0921 11.2367 16.111 11.1221 16.1104 10.9999C16.1104 10.8776 16.0915 10.7631 16.0536 10.6561C16.0157 10.5492 15.9506 10.4499 15.8583 10.3582L8.1354 2.63529C7.92151 2.4214 7.65415 2.31445 7.33332 2.31445C7.01248 2.31445 6.73748 2.42904 6.50832 2.6582C6.27915 2.88737 6.16457 3.15473 6.16457 3.46029C6.16457 3.76584 6.27915 4.0332 6.50832 4.26237L13.2458 10.9999L6.50832 17.7374C6.29443 17.9513 6.18748 18.215 6.18748 18.5285C6.18748 18.842 6.30207 19.113 6.53123 19.3415C6.7604 19.5707 7.02776 19.6853 7.33332 19.6853C7.63887 19.6853 7.90623 19.5707 8.1354 19.3415Z"
+											fill="white" fill-opacity="0.7" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer class="footer"></footer>
+	<script src="js/main.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>
-<script src="js/main.js" defer></script>

@@ -3,10 +3,14 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	padding-top: 22px;
+	z-index: 10;
+	&-container {
+		padding-top: 12px;
+		position: relative;
+	}
 	&-wrapper {
 		display: grid;
-		grid-template-columns: 2fr 7fr 3fr;
+		grid-template-columns: 2fr 6fr 4fr;
 		grid-gap: 20px;
 		align-items: center;
 	}
@@ -19,6 +23,38 @@
 		@include flex(row, flex-start, flex-end);
 		& .btn {
 			transform: translateY(-6px);
+		}
+		&_mobile {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		&-logo {
+			margin-right: auto;
+			& img {
+				max-width: 100px;
+			}
+		}
+		&-wrapper {
+			@include flex(row, center);
+		}
+		&-nav {
+			display: none;
+		}
+		&-wechat {
+			&_mobile {
+				display: grid;
+				place-items: center;
+				width: 24px;
+				height: 24px;
+			}
+			& .btn {
+				transform: none;
+				display: none;
+			}
 		}
 	}
 }

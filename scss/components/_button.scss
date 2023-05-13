@@ -48,3 +48,20 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.btn {
+		font-size: 1.4rem;
+		&-primary,
+		&-primary_small {
+			padding: 0.5em 1.58em 0.5em 3.3125em;
+			& span {
+				@include font(1.4rem, calc(24 / 18));
+				&::before {
+					@include before(-28px, 20px, 20px);
+					background: icon('wechat.svg') no-repeat 50% / cover;
+				}
+			}
+		}
+	}
+}

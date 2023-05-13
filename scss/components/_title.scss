@@ -1,10 +1,31 @@
 .title {
+	color: $black;
+	font-weight: 700;
+	margin: 0;
+	&_white {
+		color: $white;
+	}
 	&_size {
 		&-l {
+			@include font(6rem, calc(67 / 60));
+			margin-bottom: 50px;
 		}
 		&-m {
+			@include font(4rem, calc(54 / 40));
 		}
 		&-s {
+			@include font(3rem, calc(41 / 30));
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.title {
+		&_size {
+			&-l {
+				@include font(3.6rem, calc(48 / 36));
+				margin-bottom: 30px;
+			}
 		}
 	}
 }
