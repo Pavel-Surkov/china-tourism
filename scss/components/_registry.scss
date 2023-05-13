@@ -1,0 +1,47 @@
+.registry {
+	background: $blue-300;
+	border-radius: 6px;
+	padding: 13px 20px 22px;
+	margin-top: 56px;
+	& p {
+		color: $white;
+	}
+	&-header {
+		margin-bottom: 30px;
+		@include flex(row, center);
+		& img {
+			margin-right: 27px;
+		}
+		& p {
+			@include font(2rem, calc(27 / 20));
+		}
+	}
+	&-info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px 35px;
+		& p {
+			@include font(1.6rem, calc(22 / 16));
+			max-width: 340px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.registry {
+		margin-top: 30px;
+		&-header {
+			margin-bottom: 20px;
+			& img {
+				margin-right: 22px;
+			}
+			& p {
+				font-size: 1.8rem;
+			}
+		}
+		&-info {
+			grid-template-columns: 100%;
+			grid-gap: 20px;
+		}
+	}
+}
