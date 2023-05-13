@@ -1,2 +1,24 @@
 .header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 22px;
+	&-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 7fr 3fr;
+		grid-gap: 20px;
+		align-items: center;
+	}
+	&-nav {
+		& .link:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	&-wechat {
+		@include flex(row, flex-start, flex-end);
+		& .btn {
+			transform: translateY(-6px);
+		}
+	}
 }

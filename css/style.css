@@ -34,9 +34,9 @@ strong {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "NotoSans", Arial, sans-serif;
   font-weight: 400;
-  color: #1e1e1e;
+  color: #000;
   font-size: 1.6rem;
   height: 100%;
   background: #fff;
@@ -44,7 +44,7 @@ body {
 }
 
 button, textarea, input, select {
-  font-family: Arial, sans-serif;
+  font-family: "NotoSans", Arial, sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -57,7 +57,7 @@ button, textarea, input, select {
   outline-color: transparent;
   box-shadow: none;
   border-radius: 0;
-  color: #1e1e1e;
+  color: #000;
 }
 
 input {
@@ -94,24 +94,24 @@ p {
 
 ::-webkit-input-placeholder {
   font-size: 1.6rem;
-  color: #1e1e1e;
+  color: #000;
 }
 
 ::-moz-placeholder {
   font-size: 1.6rem;
-  color: #1e1e1e;
+  color: #000;
   opacity: 1;
 }
 
 :-moz-placeholder {
   font-size: 1.6rem;
-  color: #1e1e1e;
+  color: #000;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   font-size: 1.6rem;
-  color: #1e1e1e;
+  color: #000;
 }
 
 :focus::-webkit-input-placeholder {
@@ -131,15 +131,94 @@ p {
 }
 
 @font-face {
-  font-family: "RandomGrotesqueStandard";
-  src: url("../assets/fonts/RG-StandardBook.woff") format("woff");
-  font-weight: 400;
+  font-family: "NotoSans";
+  src: url("../assets/fonts/NotoSans-Bold.woff2") format("woff2"), url("../assets/fonts/NotoSans-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "NotoSans";
+  src: url("../assets/fonts/NotoSans-Medium.woff2") format("woff2"), url("../assets/fonts/NotoSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("../assets/fonts/NotoSans-Regular.woff2") format("woff2"), url("../assets/fonts/NotoSans-Regular.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.btn {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btn-primary {
+  padding: 0.667em 2.16em 0.667em 4.44em;
+  background: #00a5d1;
+}
+.btn-primary:hover {
+  background: #54c7e5;
+}
+.btn-primary:active, .btn-primary:focus {
+  opacity: 0.6;
+}
+.btn-primary span {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 1.3333333333;
+}
+.btn-primary span::before {
+  content: "";
+  position: absolute;
+  left: -41px;
+  top: 50%;
+  width: 31px;
+  height: 31px;
+  transform: translateY(-50%);
+  background: url("../assets/icons/wechat.svg") no-repeat 50%/cover;
+}
+.btn-primary_small {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 0.5em 1.58em 0.5em 3.3125em;
+  background: #00a5d1;
+}
+.btn-primary_small:hover {
+  background: #54c7e5;
+}
+.btn-primary_small:active, .btn-primary_small:focus {
+  opacity: 0.6;
+}
+.btn-primary_small span {
+  margin: 0;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.btn-primary_small span::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background: url("../assets/icons/wechat.svg") no-repeat 50%/cover;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1216px;
 }
 
 @media screen and (max-width: 1220px) {
@@ -162,6 +241,49 @@ p {
     max-width: calc(100% - 40px);
     width: 100%;
   }
+}
+.link {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.375;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+}
+.link:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.link:active, .link:focus {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 22px;
+}
+.header-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+.header-nav .link:not(:last-child) {
+  margin-right: 20px;
+}
+.header-wechat {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.header-wechat .btn {
+  transform: translateY(-6px);
 }
 
 /*# sourceMappingURL=style.css.map */

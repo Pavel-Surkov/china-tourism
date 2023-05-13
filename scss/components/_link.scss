@@ -1,2 +1,16 @@
 .link {
+	color: $white;
+	@include font(1.6rem, calc(22 / 16));
+	text-decoration: none;
+	font-weight: 400;
+	display: inline-block;
+	&:hover {
+		color: $white;
+		opacity: 0.8;
+	}
+	&:active,
+	&:focus {
+		color: $white;
+		opacity: 0.6;
+	}
 }

@@ -2,9 +2,25 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 @font-face {
-	font-family: 'RandomGrotesqueStandard';
-	src: font('RG-StandardBook.woff') format('woff');
-	font-weight: 400;
+	font-family: 'NotoSans';
+	src: font('NotoSans-Bold.woff2') format('woff2'), font('NotoSans-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	src: font('NotoSans-Medium.woff2') format('woff2'), font('NotoSans-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	src: font('NotoSans-Regular.woff2') format('woff2'), font('NotoSans-Regular.woff') format('woff');
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }

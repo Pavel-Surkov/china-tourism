@@ -1,2 +1,50 @@
 .btn {
+	font-weight: 500;
+	@include font(1.8rem, calc(24 / 18));
+	color: $white;
+	border-radius: 6px;
+	text-decoration: none;
+	&-primary {
+		padding: 0.667em 2.16em 0.667em 4.44em;
+		background: $blue-300;
+		&:hover {
+			background: $blue-500;
+		}
+		&:active,
+		&:focus {
+			opacity: 0.6;
+		}
+		& span {
+			display: inline-block;
+			margin: 0;
+			position: relative;
+			@include font(1.8rem, calc(24 / 18));
+			&::before {
+				@include before(-41px, 31px, 31px);
+				background: icon('wechat.svg') no-repeat 50% / cover;
+			}
+		}
+		&_small {
+			display: inline-block;
+			@include font(1.6rem, calc(24 / 16));
+			padding: 0.5em 1.58em 0.5em 3.3125em;
+			background: $blue-300;
+			&:hover {
+				background: $blue-500;
+			}
+			&:active,
+			&:focus {
+				opacity: 0.6;
+			}
+			& span {
+				margin: 0;
+				position: relative;
+				@include font(1.6rem, calc(24 / 16));
+				&::before {
+					@include before(-28px, 20px, 20px);
+					background: icon('wechat.svg') no-repeat 50% / cover;
+				}
+			}
+		}
+	}
 }
