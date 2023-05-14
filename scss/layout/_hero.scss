@@ -88,6 +88,9 @@
 				@include font(2rem, calc(27 / 20));
 				font-weight: 500;
 				color: $white;
+				&:not(:last-child) {
+					margin-bottom: 5px;
+				}
 				& b {
 					color: $blue-500;
 				}

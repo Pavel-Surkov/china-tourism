@@ -537,6 +537,9 @@ p {
   font-weight: 500;
   color: #fff;
 }
+.hero-advantages li p:not(:last-child) {
+  margin-bottom: 5px;
+}
 .hero-advantages li p b {
   color: #54c7e5;
 }
@@ -722,6 +725,37 @@ p {
     padding: 10px 0;
     font-size: 2rem;
     line-height: 1.2;
+  }
+}
+.sahalin .hero-wrapper {
+  padding: 155px 0 48px;
+}
+.sahalin .hero-advantages {
+  align-items: flex-start;
+}
+.sahalin .hero-advantages li span {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.375;
+}
+.sahalin .tours {
+  padding: 70px 0 62px;
+  background: #e5f0f3;
+}
+.sahalin .tours-title {
+  margin-bottom: 52px;
+  text-align: left;
+}
+.sahalin .tours-info__block {
+  background: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .sahalin .hero-wrapper {
+    padding: 110px 0 50px;
+  }
+  .sahalin .hero-advantages li span {
+    font-size: 1.2rem;
   }
 }
 .about {
@@ -987,7 +1021,45 @@ p {
   font-size: 1.6rem;
   line-height: 1.375;
 }
+.tours-questions {
+  margin-top: 50px;
+  border-radius: 10px;
+  background: #b2e0ec;
+  padding: 40px 100px 40px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.tours-questions .btn {
+  flex-shrink: 0;
+}
+.tours-questions img {
+  margin-right: 60px;
+}
+.tours-questions__text {
+  max-width: 515px;
+  margin-right: auto;
+}
+.tours-questions__text p {
+  font-size: 2.5rem;
+  line-height: 1.36;
+  font-weight: 500;
+}
 
+@media screen and (max-width: 1200px) {
+  .tours-questions {
+    padding-right: 48px;
+    gap: 30px;
+  }
+  .tours-questions img {
+    margin-right: 0;
+  }
+  .tours-questions__text p {
+    font-size: 1.8rem;
+  }
+}
 @media screen and (max-width: 991px) {
   .tours {
     margin-bottom: 70px;
@@ -1005,6 +1077,16 @@ p {
   .tours-info__block i {
     margin-bottom: 18px;
   }
+  .tours-questions {
+    padding: 20px;
+  }
+  .tours-questions img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .tours-questions__text p {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .tours-notes {
@@ -1013,6 +1095,14 @@ p {
   }
   .tours-info__block {
     padding-bottom: 70px;
+  }
+  .tours-questions {
+    display: grid;
+    grid-template-columns: 70px auto;
+  }
+  .tours-questions .btn {
+    grid-column: 1/3;
+    text-align: center;
   }
 }
 

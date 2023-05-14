@@ -1,0 +1,42 @@
+.sahalin {
+	& .hero {
+		&-wrapper {
+			padding: 155px 0 48px;
+		}
+		&-advantages {
+			align-items: flex-start;
+			& li span {
+				color: $white;
+				@include font(1.6rem, calc(22 / 16));
+			}
+		}
+	}
+	& .tours {
+		padding: 70px 0 62px;
+		background: $light-blue-100;
+		&-title {
+			margin-bottom: 52px;
+			text-align: left;
+		}
+		&-info {
+			&__block {
+				background: $white;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.sahalin {
+		& .hero {
+			&-wrapper {
+				padding: 110px 0 50px;
+			}
+			&-advantages {
+				& li span {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
