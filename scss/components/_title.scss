@@ -17,6 +17,11 @@
 			@include font(3rem, calc(41 / 30));
 		}
 	}
+	&_shrink {
+		@include font(2.2rem, calc(30 / 22));
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 991px) {

@@ -197,6 +197,34 @@ p {
   border-radius: 6px;
   text-decoration: none;
 }
+.btn-secondary {
+  display: inline-block;
+  padding: 0.5em 2.16em 0.5em 4.44em;
+  border: 2px solid #00a5d1;
+}
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+.btn-secondary:active, .btn-secondary:focus {
+  opacity: 0.6;
+}
+.btn-secondary span {
+  margin: 0;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #00a5d1;
+}
+.btn-secondary span::before {
+  content: "";
+  position: absolute;
+  left: -41px;
+  top: 50%;
+  width: 31px;
+  height: 31px;
+  transform: translateY(-50%);
+  background: url("../assets/icons/arrow-circle.svg") no-repeat 50%/cover;
+}
 .btn-primary {
   padding: 0.667em 2.16em 0.667em 4.44em;
   background: #00a5d1;
@@ -223,6 +251,16 @@ p {
   height: 31px;
   transform: translateY(-50%);
   background: url("../assets/icons/wechat.svg") no-repeat 50%/cover;
+}
+.btn-primary_check span::before {
+  content: "";
+  position: absolute;
+  left: -41px;
+  top: 50%;
+  width: 31px;
+  height: 31px;
+  transform: translateY(-50%);
+  background: url("../assets/icons/check.svg") no-repeat 50%/cover;
 }
 .btn-primary_small {
   display: inline-block;
@@ -296,6 +334,12 @@ p {
 .title_size-s {
   font-size: 3rem;
   line-height: 1.3666666667;
+}
+.title_shrink {
+  font-size: 2.2rem;
+  line-height: 1.3636363636;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 991px) {
@@ -748,6 +792,85 @@ p {
 }
 .sahalin .tours-info__block {
   background: #fff;
+}
+.sahalin-tours__wrapper {
+  padding: 70px 0 140px;
+}
+.sahalin-tours__title {
+  margin-bottom: 20px;
+}
+.sahalin-tours__subtitle {
+  margin-bottom: 70px;
+  max-width: 1010px;
+}
+.sahalin-tours-block {
+  display: grid;
+  grid-gap: 40px;
+}
+.sahalin-tour {
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: calc(24.7% - 10px) calc(75.3% - 10px);
+  grid-gap: 20px;
+}
+.sahalin-tour-info {
+  padding: 20px;
+  padding-bottom: 46px;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.sahalin-tour__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sahalin-tour .date-info {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  margin-bottom: 30px;
+}
+.sahalin-tour .date-info > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sahalin-tour .date-info i {
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+}
+.sahalin-tour__subtitle p {
+  font-size: 1.4rem;
+  line-height: 1.3571428571;
+}
+.sahalin-tour-btns .btn {
+  padding: 0.82em 2em 0.82em 4em;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  margin-bottom: 20px;
+  max-width: 245px;
+  margin-left: auto;
+}
+.sahalin-tour-btns .btn:last-child {
+  margin-bottom: 0;
+}
+.sahalin-tour-btns .btn-secondary {
+  padding: 0.68em 2em 0.68em 4em;
+}
+.sahalin-tour-btns .btn span {
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+  font-weight: 500;
+}
+.sahalin-tour-btns .btn span::before {
+  left: -41px;
 }
 
 @media screen and (max-width: 991px) {

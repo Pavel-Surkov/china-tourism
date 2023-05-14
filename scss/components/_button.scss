@@ -4,6 +4,28 @@
 	color: $white;
 	border-radius: 6px;
 	text-decoration: none;
+	&-secondary {
+		display: inline-block;
+		padding: 0.5em 2.16em 0.5em 4.44em;
+		border: 2px solid $blue-300;
+		&:hover {
+			opacity: 0.8;
+		}
+		&:active,
+		&:focus {
+			opacity: 0.6;
+		}
+		& span {
+			margin: 0;
+			position: relative;
+			@include font(1.6rem, calc(24 / 16));
+			color: $blue-300;
+			&::before {
+				@include before(-41px, 31px, 31px);
+				background: icon('arrow-circle.svg') no-repeat 50% / cover;
+			}
+		}
+	}
 	&-primary {
 		padding: 0.667em 2.16em 0.667em 4.44em;
 		background: $blue-300;
@@ -22,6 +44,12 @@
 			&::before {
 				@include before(-41px, 31px, 31px);
 				background: icon('wechat.svg') no-repeat 50% / cover;
+			}
+		}
+		&_check {
+			& span::before {
+				@include before(-41px, 31px, 31px);
+				background: icon('check.svg') no-repeat 50% / cover;
 			}
 		}
 		&_small {
