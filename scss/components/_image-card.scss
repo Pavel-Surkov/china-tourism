@@ -1,0 +1,27 @@
+.image-card {
+	&__img {
+		margin-bottom: 20px;
+		& img {
+			border-radius: 10px;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__title {
+		margin: 0;
+		margin-bottom: 10px;
+		font-weight: 500;
+		@include font(2.2rem, calc(30 / 22));
+	}
+	&__description {
+		& p {
+			@include font(1.6rem, calc(22 / 16));
+			font-weight: 400;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.image-card {
+	}
+}

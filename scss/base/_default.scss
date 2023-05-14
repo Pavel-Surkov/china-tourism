@@ -6,6 +6,14 @@
 		& p:not(:last-child) {
 			margin-bottom: 22px;
 		}
+		&_lg {
+			& p {
+				@include font(1.8rem, calc(24.5 / 18));
+			}
+			& p:not(:last-child) {
+				margin-bottom: 3px;
+			}
+		}
 		&_sm {
 			& p {
 				@include font(1.4rem, calc(19 / 14));
@@ -14,6 +22,20 @@
 				margin-bottom: 22px;
 			}
 		}
+	}
+}
+
+.wechat {
+	&-wrapper {
+		margin-top: 110px;
+		@include flex(row, flex-start, center);
+	}
+}
+
+.subtitle {
+	max-width: 1010px;
+	& p {
+		@include font(1.6rem, calc(22 / 16));
 	}
 }
 
@@ -26,6 +48,14 @@
 			& p:not(:last-child) {
 				margin-bottom: 18px;
 			}
+			&_lg {
+				& p {
+					font-size: 1.4rem;
+				}
+				& p:not(:last-child) {
+					margin-bottom: 18px;
+				}
+			}
 			&_sm {
 				& p {
 					@include font(1.4rem, calc(19 / 14));
@@ -34,6 +64,16 @@
 					margin-bottom: 18px;
 				}
 			}
+		}
+	}
+	.wechat {
+		&-wrapper {
+			margin-top: 40px;
+		}
+	}
+	.subtitle {
+		& p {
+			font-size: 1.4rem;
 		}
 	}
 }

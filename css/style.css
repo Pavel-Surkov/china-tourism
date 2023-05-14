@@ -138,12 +138,36 @@ p {
 .text-block p:not(:last-child) {
   margin-bottom: 22px;
 }
+.text-block_lg p {
+  font-size: 1.8rem;
+  line-height: 1.3611111111;
+}
+.text-block_lg p:not(:last-child) {
+  margin-bottom: 3px;
+}
 .text-block_sm p {
   font-size: 1.4rem;
   line-height: 1.3571428571;
 }
 .text-block_sm p:not(:last-child) {
   margin-bottom: 22px;
+}
+
+.wechat-wrapper {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.subtitle {
+  max-width: 1010px;
+}
+.subtitle p {
+  font-size: 1.6rem;
+  line-height: 1.375;
 }
 
 @media screen and (max-width: 991px) {
@@ -153,12 +177,26 @@ p {
   .text-block p:not(:last-child) {
     margin-bottom: 18px;
   }
+  .text-block_lg p {
+    font-size: 1.4rem;
+  }
+  .text-block_lg p:not(:last-child) {
+    margin-bottom: 18px;
+  }
   .text-block_sm p {
     font-size: 1.4rem;
     line-height: 1.3571428571;
   }
   .text-block_sm p:not(:last-child) {
     margin-bottom: 18px;
+  }
+
+  .wechat-wrapper {
+    margin-top: 40px;
+  }
+
+  .subtitle p {
+    font-size: 1.4rem;
   }
 }
 @font-face {
@@ -790,6 +828,7 @@ p {
 .sahalin .tours {
   padding: 70px 0 62px;
   background: #e5f0f3;
+  margin-bottom: 0;
 }
 .sahalin .tours-title {
   margin-bottom: 52px;
@@ -1276,6 +1315,107 @@ p {
     grid-column: 1/3;
     text-align: center;
   }
+}
+.hotel-wrapper {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+.hotel-info .title {
+  margin-bottom: 20px;
+}
+.hotel-info .text-block_lg {
+  max-width: 549px;
+}
+.hotel-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .hotel-wrapper {
+    grid-template-columns: 100%;
+    padding-top: 60px;
+  }
+  .hotel-info .title {
+    margin-bottom: 14px;
+  }
+}
+.attractions-wrapper {
+  padding-top: 100px;
+}
+.attractions-wrapper > .title {
+  margin-bottom: 20px;
+}
+.attractions-wrapper .subtitle {
+  margin-bottom: 40px;
+}
+.attractions-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 70px 20px;
+}
+.attractions.food {
+  margin-bottom: 150px;
+}
+.attractions.food .attractions-content {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 991px) {
+  .attractions-wrapper {
+    padding-top: 60px;
+  }
+  .attractions-wrapper > .title {
+    margin-bottom: 14px;
+  }
+  .attractions-wrapper .subtitle {
+    margin-bottom: 30px;
+  }
+  .attractions-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 20px;
+  }
+  .attractions.food {
+    margin-bottom: 90px;
+  }
+  .attractions.food .attractions-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .attractions-wrapper > .title {
+    word-wrap: break-word;
+  }
+  .attractions-content {
+    grid-template-columns: 100%;
+    grid-gap: 30px 20px;
+  }
+  .attractions.food .attractions-content {
+    grid-template-columns: 100%;
+  }
+}
+.image-card__img {
+  margin-bottom: 20px;
+}
+.image-card__img img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.image-card__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 1.3636363636;
+}
+.image-card__description p {
+  font-size: 1.6rem;
+  line-height: 1.375;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

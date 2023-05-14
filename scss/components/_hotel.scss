@@ -1,0 +1,37 @@
+.hotel {
+	&-wrapper {
+		padding-top: 80px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		align-items: center;
+	}
+	&-info {
+		& .title {
+			margin-bottom: 20px;
+		}
+		& .text-block_lg {
+			max-width: 549px;
+		}
+	}
+	&-image {
+		& img {
+			width: 100%;
+			border-radius: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.hotel {
+		&-wrapper {
+			grid-template-columns: 100%;
+			padding-top: 60px;
+		}
+		&-info {
+			& .title {
+				margin-bottom: 14px;
+			}
+		}
+	}
+}
