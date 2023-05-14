@@ -38,5 +38,9 @@
 				@include font(2rem, calc(41 / 30));
 			}
 		}
+		&_shrink {
+			@include font(1.8rem, calc(30 / 22));
+			margin-bottom: 18px;
+		}
 	}
 }

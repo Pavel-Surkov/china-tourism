@@ -356,6 +356,11 @@ p {
     font-size: 2rem;
     line-height: 1.3666666667;
   }
+  .title_shrink {
+    font-size: 1.8rem;
+    line-height: 1.3636363636;
+    margin-bottom: 18px;
+  }
 }
 .container {
   margin: 0 auto;
@@ -821,6 +826,7 @@ p {
   padding-left: 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
 }
 .sahalin-tour__img img {
   width: 100%;
@@ -879,6 +885,49 @@ p {
   }
   .sahalin .hero-advantages li span {
     font-size: 1.2rem;
+  }
+  .sahalin-tours__wrapper {
+    padding: 60px 0 90px;
+  }
+  .sahalin-tours__title {
+    margin-bottom: 14px;
+  }
+  .sahalin-tours__subtitle {
+    margin-bottom: 30px;
+  }
+  .sahalin-tours__subtitle p {
+    font-size: 1.4rem;
+  }
+  .sahalin-tour {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sahalin-tour-info {
+    grid-template-columns: 100%;
+    padding: 16px;
+    padding-left: 0;
+  }
+  .sahalin-tour .date-info {
+    margin-bottom: 16px;
+  }
+  .sahalin-tour-btns .btn {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sahalin-tour {
+    grid-template-columns: 100%;
+  }
+  .sahalin-tour-info {
+    padding: 20px;
+    padding-top: 0;
+  }
+  .sahalin-tour .date-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 30px;
   }
 }
 .about {

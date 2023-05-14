@@ -53,6 +53,7 @@
 			padding-left: 0;
 			display: grid;
 			grid-template-columns: 2fr 1fr;
+			grid-gap: 20px;
 		}
 		&__img {
 			& img {
@@ -116,6 +117,52 @@
 				& li span {
 					font-size: 1.2rem;
 				}
+			}
+		}
+		&-tours {
+			&__wrapper {
+				padding: 60px 0 90px;
+			}
+			&__title {
+				margin-bottom: 14px;
+			}
+			&__subtitle {
+				margin-bottom: 30px;
+				& p {
+					font-size: 1.4rem;
+				}
+			}
+		}
+		&-tour {
+			grid-template-columns: 1fr 1fr;
+			&-info {
+				grid-template-columns: 100%;
+				padding: 16px;
+				padding-left: 0;
+			}
+			& .date-info {
+				margin-bottom: 16px;
+			}
+			&-btns {
+				& .btn {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.sahalin {
+		&-tour {
+			grid-template-columns: 100%;
+			&-info {
+				padding: 20px;
+				padding-top: 0;
+			}
+			& .date-info {
+				@include flex(row, center, flex-start, wrap);
+				gap: 10px 30px;
 			}
 		}
 	}
