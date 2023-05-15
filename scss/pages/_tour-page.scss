@@ -131,6 +131,12 @@
 		}
 		& .hotel {
 			margin-bottom: 60px;
+			&-wrapper {
+				padding-top: 0;
+			}
+		}
+		& .tours-title {
+			margin-bottom: 20px;
 		}
 	}
 }
