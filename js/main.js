@@ -26,3 +26,5 @@ const heroSwiper = new Swiper('.hero-swiper', {
 })();
 
 Fancybox.bind('[data-fancybox="gallery"]', {});
+
+(function handleProgramModals() {})();

@@ -79,6 +79,9 @@
 			margin-bottom: 52px;
 		}
 	}
+	& .hotel {
+		margin-bottom: 120px;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -125,6 +128,9 @@
 					}
 				}
 			}
+		}
+		& .hotel {
+			margin-bottom: 60px;
 		}
 	}
 }
