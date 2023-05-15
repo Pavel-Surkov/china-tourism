@@ -24,3 +24,5 @@ const heroSwiper = new Swiper('.hero-swiper', {
     document.documentElement.classList.remove('is-locked');
   });
 })();
+
+Fancybox.bind('[data-fancybox="gallery"]', {});
