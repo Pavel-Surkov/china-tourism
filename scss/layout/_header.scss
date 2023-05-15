@@ -28,6 +28,20 @@
 			display: none;
 		}
 	}
+	&_relative {
+		position: relative;
+		background: $dark-blue-300;
+		& .logo img {
+			max-height: 82px;
+		}
+		& .header-container {
+			padding: 9px 0;
+		}
+		& .btn-primary,
+		& .btn-primary_small {
+			transform: none;
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {

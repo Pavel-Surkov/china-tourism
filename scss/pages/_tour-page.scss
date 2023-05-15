@@ -1,0 +1,82 @@
+.tour-page {
+	& .hero {
+		background: $light-blue-100;
+		&-swiper {
+			width: calc(50% - 10px);
+			left: auto;
+			right: 0;
+		}
+		&-wrapper {
+			padding: 72px 0 40px;
+			display: grid;
+			grid-template-columns: calc(50% + 10px) calc(50% - 10px);
+		}
+		&-tour {
+			padding-right: 20px;
+			& .title {
+				line-height: calc(44 / 40);
+				margin-bottom: 20px;
+			}
+			&__subtitle {
+				margin-bottom: 64px;
+			}
+			& .date-info {
+				display: grid;
+				grid-template-columns: 2fr 4fr;
+				margin-bottom: 60px;
+				& > div {
+					@include flex(row, center);
+				}
+				& i {
+					display: grid;
+					place-items: center;
+					margin-right: 10px;
+					width: 40px;
+					height: 40px;
+					& svg {
+						width: inherit;
+						height: inherit;
+					}
+				}
+				& span {
+					font-weight: 500;
+					@include font(1.8rem, calc(24.5 / 18));
+				}
+			}
+			&-registry {
+				@include flex();
+				gap: 20px;
+				& i {
+					display: inline-block;
+					margin-bottom: 15px;
+					flex-shrink: 0;
+				}
+				& p {
+					font-weight: 500;
+					margin-bottom: 5px;
+				}
+				& span {
+					font-weight: 500;
+				}
+			}
+		}
+		&-swiper {
+			&-btns {
+				height: 100%;
+				@include flex(row, flex-end, flex-end);
+			}
+			&-img::before {
+				content: none;
+			}
+		}
+	}
+	& .tours {
+		&-wrapper {
+			padding-top: 70px;
+		}
+		&-title {
+			text-align: left;
+			margin-bottom: 52px;
+		}
+	}
+}

@@ -493,6 +493,19 @@ p {
 .header-wechat_mobile {
   display: none;
 }
+.header_relative {
+  position: relative;
+  background: #006f8d;
+}
+.header_relative .logo img {
+  max-height: 82px;
+}
+.header_relative .header-container {
+  padding: 9px 0;
+}
+.header_relative .btn-primary, .header_relative .btn-primary_small {
+  transform: none;
+}
 
 @media screen and (max-width: 991px) {
   .header-logo {
@@ -884,6 +897,9 @@ p {
   align-items: center;
   flex-wrap: nowrap;
 }
+.sahalin-tour .date-info span {
+  font-weight: 500;
+}
 .sahalin-tour .date-info i {
   display: grid;
   place-items: center;
@@ -969,6 +985,96 @@ p {
     gap: 10px 30px;
   }
 }
+.tour-page .hero {
+  background: #e5f0f3;
+}
+.tour-page .hero-swiper {
+  width: calc(50% - 10px);
+  left: auto;
+  right: 0;
+}
+.tour-page .hero-wrapper {
+  padding: 72px 0 40px;
+  display: grid;
+  grid-template-columns: calc(50% + 10px) calc(50% - 10px);
+}
+.tour-page .hero-tour {
+  padding-right: 20px;
+}
+.tour-page .hero-tour .title {
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.tour-page .hero-tour__subtitle {
+  margin-bottom: 64px;
+}
+.tour-page .hero-tour .date-info {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  margin-bottom: 60px;
+}
+.tour-page .hero-tour .date-info > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.tour-page .hero-tour .date-info i {
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.tour-page .hero-tour .date-info i svg {
+  width: inherit;
+  height: inherit;
+}
+.tour-page .hero-tour .date-info span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.3611111111;
+}
+.tour-page .hero-tour-registry {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.tour-page .hero-tour-registry i {
+  display: inline-block;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+.tour-page .hero-tour-registry p {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.tour-page .hero-tour-registry span {
+  font-weight: 500;
+}
+.tour-page .hero-swiper-btns {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+.tour-page .hero-swiper-img::before {
+  content: none;
+}
+.tour-page .tours-wrapper {
+  padding-top: 70px;
+}
+.tour-page .tours-title {
+  text-align: left;
+  margin-bottom: 52px;
+}
+
 .about {
   padding-bottom: 120px;
 }

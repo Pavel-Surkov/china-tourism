@@ -70,6 +70,9 @@
 			& > div {
 				@include flex(row, center);
 			}
+			& span {
+				font-weight: 500;
+			}
 			& i {
 				display: grid;
 				place-items: center;
