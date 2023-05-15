@@ -80,3 +80,51 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.tour-page {
+		& .hero {
+			&-wrapper {
+				position: relative;
+				grid-template-columns: 100%;
+				padding: 40px 0;
+				min-height: auto;
+			}
+			&-swiper {
+				position: relative;
+				width: 100%;
+				height: auto;
+				&-btns {
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: auto;
+					transform: translateY(-60px);
+				}
+			}
+			&-tour {
+				&__subtitle {
+					margin-bottom: 30px;
+				}
+				& .date-info {
+					@include flex(row, center, flex-start, wrap);
+					gap: 10px 30px;
+					margin-bottom: 30px;
+					& i {
+						width: 30px;
+						height: 30px;
+					}
+					& span {
+						font-size: 1.6rem;
+					}
+				}
+				&-registry {
+					& p,
+					& span {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+}
